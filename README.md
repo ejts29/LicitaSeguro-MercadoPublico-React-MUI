@@ -1,4 +1,3 @@
-```
 #  LicitaSeguro - Portal de Licitaciones Públicas (React/MUI)
 
 > Proyecto desarrollado como **Evaluación Final de Desarrollo Frontend (EXAMEN TRANSVERSAL)**. Es una **Single Page Application (SPA)** moderna cuyo propósito es facilitar la consulta y exploración de licitaciones públicas disponibles en el portal oficial **Mercado Público (ChileCompra)**.
@@ -95,6 +94,5 @@ If you are developing a production application, we recommend using TypeScript wi
 * Responsiva: La aplicación se adapta a diferentes tamaños de pantalla (escritorio, tablet, móvil).
 * Validación de formularios: Incluye validación en tiempo real para asegurar que los datos del usuario sean correctos antes de enviarlos.
 * Consumo de API: La aplicación consume la API de Mercado Público para obtener información actualizada sobre licitaciones y proveedores.
-
 
 ```
