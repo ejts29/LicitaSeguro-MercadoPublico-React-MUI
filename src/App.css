@@ -1,0 +1,52 @@
+/* Estilo para el contenedor principal (#root) */
+#root {
+  max-width: 1280px; /* Define el ancho máximo del contenedor principal para que no se estire demasiado en pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 2rem; /* Añade un padding alrededor del contenedor principal para separar el contenido de los bordes */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo para el logo */
+.logo {
+  height: 6em; /* Establece la altura del logo a 6em */
+  padding: 1.5em; /* Añade espacio alrededor del logo */
+  will-change: filter; /* Indica al navegador que la propiedad 'filter' será cambiada para optimizar el rendimiento */
+  transition: filter 300ms; /* Aplica una transición de 300ms a la propiedad 'filter' cuando se cambia */
+}
+
+/* Estilo para el logo cuando se pasa el mouse por encima */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Aplica un efecto de sombra al logo cuando se pasa el mouse, usando un color azul */
+}
+
+/* Estilo para el logo de React cuando se pasa el mouse por encima */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* Aplica un efecto de sombra en el logo de React con un color verde claro */
+}
+
+/* Animación para girar el logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); /* Al inicio, el logo está en su posición original */
+  }
+  to {
+    transform: rotate(360deg); /* Al final, el logo da una vuelta completa */
+  }
+}
+
+/* Estilo para el logo en el caso de que el usuario no prefiera animaciones */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo { /* Aplica solo a los enlaces que sean el segundo hijo */
+    animation: logo-spin infinite 20s linear; /* Aplica la animación 'logo-spin' para hacer que gire indefinidamente */
+  }
+}
+
+/* Estilo para las tarjetas */
+.card {
+  padding: 2em; /* Añade padding alrededor del contenido de la tarjeta */
+}
+
+/* Estilo para el texto de "Leer la documentación" */
+.read-the-docs {
+  color: #888; /* Establece el color del texto a un gris claro */
+}

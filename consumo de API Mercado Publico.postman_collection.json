@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "f52c75f7-5883-4a74-99af-04c6b86abd02",
+		"name": "consumo de API Mercado Publico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43801966",
+		"_collection_link": "https://efren-4907564.postman.co/workspace/efren-'s-Workspace~10da0c18-f91b-4448-8c8e-fa1269048bb7/collection/43801966-f52c75f7-5883-4a74-99af-04c6b86abd02?action=share&source=collection_link&creator=43801966"
+	},
+	"item": [
+		{
+			"name": "Listado de licitaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.mercadopublico.cl/servicios/v1/publico/licitaciones.json?fecha=10062025&estado=adjudicada&ticket=AC3A098B-4CD0-41AF-81A5-41284248419B",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mercadopublico",
+						"cl"
+					],
+					"path": [
+						"servicios",
+						"v1",
+						"publico",
+						"licitaciones.json"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "10062025"
+						},
+						{
+							"key": "estado",
+							"value": "adjudicada"
+						},
+						{
+							"key": "ticket",
+							"value": "AC3A098B-4CD0-41AF-81A5-41284248419B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detalle Licitación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.mercadopublico.cl/servicios/v1/publico/licitaciones.json?Codigo=938614-31-LE25&ticket=AC3A098B-4CD0-41AF-81A5-41284248419B",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mercadopublico",
+						"cl"
+					],
+					"path": [
+						"servicios",
+						"v1",
+						"publico",
+						"licitaciones.json"
+					],
+					"query": [
+						{
+							"key": "Codigo",
+							"value": "938614-31-LE25"
+						},
+						{
+							"key": "ticket",
+							"value": "AC3A098B-4CD0-41AF-81A5-41284248419B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Proveedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.mercadopublico.cl/servicios/v1/Publico/Empresas/BuscarProveedor?rutempresaproveedor=77.838.393-4&ticket=AC3A098B-4CD0-41AF-81A5-41284248419B",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mercadopublico",
+						"cl"
+					],
+					"path": [
+						"servicios",
+						"v1",
+						"Publico",
+						"Empresas",
+						"BuscarProveedor"
+					],
+					"query": [
+						{
+							"key": "rutempresaproveedor",
+							"value": "77.838.393-4"
+						},
+						{
+							"key": "ticket",
+							"value": "AC3A098B-4CD0-41AF-81A5-41284248419B"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

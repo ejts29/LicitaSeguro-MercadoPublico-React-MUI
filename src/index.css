@@ -1,0 +1,134 @@
+/* Estilos globales que se aplican a todo el documento */
+
+:root {
+  /* Establece la fuente predeterminada del sistema */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+  /* Establece la altura de línea para el texto */
+  line-height: 1.5;
+  
+  /* Establece el peso de la fuente predeterminado */
+  font-weight: 400;
+
+  /* Define el esquema de color preferido (oscuro o claro) */
+  color-scheme: light dark;
+
+  /* Establece el color del texto y el fondo */
+  color: rgba(255, 255, 255, 0.87); /* El texto tiene un color blanco con un 87% de opacidad */
+  background-color: #242424; /* Fondo oscuro */
+
+  /* Evita la síntesis de fuentes, manteniendo el estilo de la fuente original */
+  font-synthesis: none;
+
+  /* Asegura una legibilidad óptima en la pantalla */
+  text-rendering: optimizeLegibility;
+
+  /* Mejora la suavización de fuentes en Webkit (Safari, Chrome) */
+  -webkit-font-smoothing: antialiased;
+
+  /* Mejora la suavización de fuentes en Firefox en Mac OS */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos para enlaces */
+
+a {
+  /* Define un peso de fuente más fuerte para los enlaces */
+  font-weight: 500;
+
+  /* Color del enlace */
+  color: #646cff;
+
+  /* Elimina la subrayado de los enlaces */
+  text-decoration: inherit;
+}
+
+/* Efectos para los enlaces cuando el mouse pasa por encima */
+a:hover {
+  /* Cambia el color del enlace al pasar el mouse */
+  color: #535bf2;
+}
+
+/* Estilos generales para el cuerpo de la página */
+
+body {
+  /* Elimina los márgenes predeterminados */
+  margin: 0;
+
+  /* Usamos un diseño flexbox para centrar el contenido */
+  display: flex;
+  place-items: center;
+
+  /* Define el ancho mínimo y alto mínimo para el cuerpo */
+  min-width: 320px;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+  /* Aumenta el tamaño de la fuente del título */
+  font-size: 3.2em;
+
+  /* Ajusta la altura de línea para mejorar la legibilidad */
+  line-height: 1.1;
+}
+
+/* Estilos para los botones */
+button {
+  /* Bordes redondeados */
+  border-radius: 8px;
+
+  /* Borde invisible por defecto */
+  border: 1px solid transparent;
+
+  /* Padding para los botones */
+  padding: 0.6em 1.2em;
+
+  /* Tamaño y peso de la fuente */
+  font-size: 1em;
+  font-weight: 500;
+
+  /* Hereda la familia de fuente del documento */
+  font-family: inherit;
+
+  /* Establece el fondo del botón a un color oscuro */
+  background-color: #1a1a1a;
+
+  /* Cambia el cursor al pasar sobre el botón */
+  cursor: pointer;
+
+  /* Transición suave para el color del borde */
+  transition: border-color 0.25s;
+}
+
+/* Estilos cuando el botón es hover */
+button:hover {
+  /* Cambia el color del borde al pasar el mouse */
+  border-color: #646cff;
+}
+
+/* Estilos cuando el botón tiene el foco o foco visible */
+button:focus,
+button:focus-visible {
+  /* Resalta el borde del botón cuando está enfocado */
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilos específicos para los usuarios que prefieren el esquema de color claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Ajusta los colores para el esquema claro */
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  /* Cambia el color del enlace cuando el usuario está en modo claro */
+  a:hover {
+    color: #747bff;
+  }
+
+  /* Cambia el color de fondo del botón en modo claro */
+  button {
+    background-color: #f9f9f9;
+  }
+}
